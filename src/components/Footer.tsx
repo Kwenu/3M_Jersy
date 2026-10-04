@@ -112,7 +112,7 @@ export function Footer() {
                 Designed & Developed by
               </span>
               <a
-                href="https:www.cloudxglobal.lk"
+                href="www.cloudxglobal.lk"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Contact"
