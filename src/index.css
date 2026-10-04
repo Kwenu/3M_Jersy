@@ -1,0 +1,57 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+body {
+  background-color: #000000;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: #5dff02;
+  color: #000000;
+}
+.grid-lines {
+  background-image: linear-gradient(rgba(93, 255, 2, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(93, 255, 2, 0.055) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+.diag-stripes {
+  background-image: repeating-linear-gradient(
+    115deg,
+    rgba(93, 255, 2, 0.14) 0px,
+    rgba(93, 255, 2, 0.14) 2px,
+    transparent 2px,
+    transparent 12px
+  );
+}
+.clip-angle {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 26px), calc(100% - 26px) 100%, 0 100%);
+}
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.18);
+  color: transparent;
+}
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #5dff02;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
